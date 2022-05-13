@@ -49,7 +49,7 @@ void setup() {
   while (!Serial);
   SPI.begin();
   
-  SPISettings setA(1000000, MSBFIRST, SPI_MODE0);     // Set SPI setting
+  SPISettings setA(1000000, MSBFIRST, SPI_MODE0);      // Set SPI setting
   SPI.beginTransaction(setA);
 
   // Initalize the  data ready and chip select pins:
